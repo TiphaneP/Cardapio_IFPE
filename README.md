@@ -113,19 +113,20 @@ INSERT INTO usuarios (username, password, role) VALUES ('seu_username',
 - **Típhane Pereira** – Desenvolvedora  
 
   [![GitHub](https://img.shields.io/badge/GitHub-TiphaneP/-black?logo=github)](https://github.com/TiphaneP/)  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-tiphane-pereira-blue?logo=linkedin)](https://linkedin.com/in/tiphane-pereira)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-tiphane-pereira-blue?logo=linkedin)](https://linkedin.com/in/tiphane-pereira/)
 
 
 - **Prof. Josivaldo França** – Orientador  
   
 
-- **João Vitor** – Desenvolvedor 
-  [GitHub](https://github.com/joaovitorbbs1)
-  [![LinkedIn](http://linkedin.com/in/joaovitorbbs/)
+- **João Vitor** – Desenvolvedor
+  
+  [![GitHub](https://img.shields.io/badge/GitHub-joaovitorbbs1-black?logo=github)](https://github.com/joaovitorbbs1/)  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-joaovitorbbs-blue?logo=linkedin)](https://linkedin.com/in/joaovitorbbs/)
+
   
 - **Jadson Ribeiro** – Colaborador (Documentação)  
 
 
 
-* **Página Pública:** Acesse \http://localhost/cardapio_if/index.html` para ver o cardápio.`
 
