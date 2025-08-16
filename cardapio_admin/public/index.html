@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Define o documento como HTML5 e o idioma como Português do Brasil. -->
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações essenciais do cabeçalho da página -->
+    <meta charset="UTF-8"> <!-- Garante que o navegador interprete corretamente todos os caracteres. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Garante que a página seja responsiva em dispositivos móveis. -->
+    <title>Cardápio do refeitório - Instituto Federal</title> <!-- Título que aparece na aba do navegador. -->
+
+    <!-- Meta Tags para SEO (Otimização para Buscadores) e Compartilhamento em redes sociais. -->
+    <meta name="description" content="Confira o cardápio semanal da cantina do Instituto Federal.">
+    <meta name="keywords" content="cardápio, cantina, refeitório, instituto federal, almoço, café da manhã, jantar">
+
+    <!-- Links para Fontes e Estilos Externos -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Framework CSS para estilização rápida. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Fonte 'Inter' do Google Fonts. -->
+    <script src="https://unpkg.com/lucide@latest"></script> <!-- Biblioteca de ícones. -->
+
+    <!-- Link para a sua folha de estilos personalizada (style.css). -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased"> <!-- 'antialiased' melhora a renderização das fontes. -->
+
+    <!-- Cabeçalho do site: Fixo no topo e visível em todas as páginas. -->
+    <header class="if-green text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Seção da Esquerda: Logo e Título -->
+                <div class="flex items-center space-x-4">
+                    <!-- LOGO DO INSTITUTO FEDERAL EM SVG - Inserido para substituir o ícone anterior. -->
+                    <img src="..\assets\images\logo-if.png" width="50" height="50"></img>
+                    <h1 class="text-xl font-bold tracking-tight">Refeitório IF</h1>
+                </div>
+                <!-- Seção da Direita: Data (visível apenas em telas maiores) -->
+                <div class="hidden sm:block">
+                    <p class="text-sm font-medium" id="header-date"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal da Página -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+        <!-- Seção do Cardápio Semanal -->
+        <section id="cardapio-semanal">
+            <!-- Título e Subtítulo da seção -->
+            <div class="text-center mb-8 lg:mb-12">
+                <h2 class="text-3xl font-extrabold if-green-text sm:text-4xl lg:text-5xl">Cardápio da Semana</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-base text-gray-500 sm:text-lg">
+                    Confira o que preparamos para você a cada dia!
+                </p>
+            </div>
+
+            <!-- Container principal do cardápio -->
+            <div class="w-full max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
+                <!-- Navegação das Abas (Dias da semana) -->
+                <div class="border-b border-gray-200">
+                    <nav class="-mb-px flex space-x-2 px-2 sm:space-x-4 sm:px-4 md:justify-center overflow-x-auto hide-scrollbar"
+                        aria-label="Tabs" id="tabs-nav">
+                        <!-- Os botões das abas serão inseridos aqui dinamicamente pelo JavaScript. -->
+                    </nav>
+                </div>
+
+                <!-- Conteúdo das Abas (Cardápio de cada dia) -->
+                <div id="tabs-content" class="p-6 sm:p-8">
+                    <!-- O conteúdo de cada refeição será inserido aqui dinamicamente pelo JavaScript. -->
+                </div>
+            </div>
+
+            <div class="text-center mt-6">
+                <div class="alert alert-light mb-4 d-inline-flex align-items-center">
+                    <i class="bi bi-clock-history me-2"></i>
+                    <span id="last-updated"></span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer class="bg-gray-100 border-t border-gray-200 mt-12">
+        <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-500">
+            <p>&copy; <span id="current-year"></span> Sistema de Cardápio - Instituto Federal</p>
+            <p class="text-sm mt-1"></p>
+            <!-- Link para a área de login -->
+            <div class="mt-4">
+                <a href="..\login.php"
+                    class="text-xs text-gray-400 hover:text-if-green-text hover:underline transition-colors">Acesso
+                    Restrito</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualizar o ano atual no rodapé
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

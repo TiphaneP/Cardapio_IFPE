@@ -1,0 +1,74 @@
+/* ==== ESTILOS GERAIS E TEMA DO INSTITUTO FEDERAL ==== */
+
+/* Define a fonte padrão para todo o corpo da página e uma cor de fundo suave. */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Cor de fundo cinza bem claro (equivalente a 'bg-slate-50' do Tailwind) */
+}
+
+/* Define a cor de fundo verde padrão do IF. */
+.if-green {
+    background-color: #013b1b;
+}
+
+/* Define a cor do texto para o verde padrão do IF. */
+.if-green-text {
+    color: #013b1b;
+}
+
+/* Define a cor da borda para o verde padrão do IF. */
+.if-border {
+    border-color: #013b1b;
+}
+
+/* Define a cor do anel de foco (acessibilidade) para o verde padrão do IF. */
+.if-ring-focus:focus {
+    --tw-ring-color: #013b1b;
+}
+
+
+/* ==== ESTILOS ESPECÍFICOS PARA O COMPONENTE DE ABAS ==== */
+
+/* Estiliza a aba que está atualmente selecionada (ativa). */
+.tab-active {
+    border-color: #013b1b; /* Borda inferior verde. */
+    color: #013b1b;       /* Texto verde. */
+    font-weight: 600;       /* Texto em negrito. */
+}
+
+/* Estiliza as abas que não estão selecionadas (inativas). */
+.tab-inactive {
+    border-color: transparent; /* Borda inferior transparente. */
+    color: #4b5563;           /* Texto cinza escuro. */
+}
+
+/* Define o efeito visual quando o mouse passa por cima de uma aba inativa. */
+.tab-inactive:hover {
+    border-color: #d1d5db; /* Borda inferior cinza claro. */
+    color: #1f2937;       /* Texto mais escuro. */
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    position:static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Estilo para a informação de atualização */
+#last-updated {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+#last-updated i {
+    margin-right: 0.25rem;
+    color: #013b1b;
+}

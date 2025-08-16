@@ -1,0 +1,195 @@
+/* Reset básico e estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Estilização dos dias da semana */
+.dia-semana {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3498db;
+}
+
+.dia-semana h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.refeicao {
+  margin-bottom: 1.5rem;
+}
+
+.refeicao h3 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+
+.refeicao ul {
+  list-style-position: inside;
+  margin-left: 1rem;
+}
+
+.refeicao li {
+  margin-bottom: 0.3rem;
+}
+
+/* Rodapé fixo */
+footer {
+  background-color: #013b1b;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Botões de ação */
+.acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.acoes button {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.acoes button:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  .dia-semana {
+    padding: 1rem;
+  }
+}
+
+/* ========== CABEÇALHO ========== */
+.navbar {
+  background-color: #013b1b !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: rotate(10deg);
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link i {
+  margin-right: 5px;
+}
+
+/* Usuário logado */
+.navbar-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Botão Sair */
+.btn-outline-light {
+  background-color: #a50505;
+  font-weight: 500;
+}
+
+/* Container principal */
+.container.my-4 {
+  padding-bottom: 80px;
+  padding-top: 0 !important;
+  min-height: calc(100vh - 180px);
+}
+
+.d-flex.justify-content-between.align-items-center {
+  margin-bottom: 0.5rem !important;
+  /* Reduz a margem inferior */
+}
+
+h1.text-success {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.btn.btn-success {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.login-link-recuperar {
+  display: block;
+  margin-top: 15px;
+  text-align:justify;
+  font-size: 0.9em;
+  color: #007bff;
+  text-decoration: none;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.login-link-recuperar:hover {
+  text-decoration: underline;
+}
