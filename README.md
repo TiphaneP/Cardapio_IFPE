@@ -114,7 +114,7 @@ INSERT INTO usuarios (username, password, role) VALUES ('seu_username',
 
   [![GitHub](https://img.shields.io/badge/GitHub-TiphaneP/-black?logo=github)](https://github.com/TiphaneP/)  
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-tiphane-pereira-blue?logo=linkedin)](https://linkedin.com/in/tiphane-pereira)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-joaovitorbbs-blue?logo=linkedin)](https://linkedin.com/in/joaovitorbbs/)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-tiphanepereira-blue?logo=linkedin)](https://linkedin.com/in/tiphane-pereira/)
 
 
 - **Prof. Josivaldo França** – Orientador  
