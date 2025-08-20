@@ -1,5 +1,5 @@
-# Sistema de Cardápio Semanal - Cantina IF
-Sistema de gerenciamento e visualização do cardápio semanal para a cantina do Instituto Federal desenvolvido em PHP, MySQL, HTML, CSS (Tailwind CSS) e JavaScript.
+# Sistema de Cardápio Semanal - Refeitório IF
+Sistema de gerenciamento e visualização do cardápio semanal para o refeitório do Instituto Federal desenvolvido em PHP, MySQL, HTML, CSS (Tailwind CSS) e JavaScript.
 
 **Painel Administrativo:**
 
