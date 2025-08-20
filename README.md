@@ -16,7 +16,7 @@ Sistema de gerenciamento e visualização do cardápio semanal para a cantina do
 
 - Visualização do cardápio semanal completo.
 
-- Navegação por dias da semana (vertical/horizontal responsiva).
+- Navegação por dias da semana (horizontal responsiva).
 
 - Exibição da data da última atualização do cardápio.
 
@@ -24,7 +24,7 @@ Sistema de gerenciamento e visualização do cardápio semanal para a cantina do
 
 * PHP
 
-* MySQL / MariaDB (via XAMPP)
+* MySQL  (via XAMPP)
 
 * HTML5
 
@@ -55,6 +55,7 @@ Como Rodar o Projeto Localmente:
 * Execute os scripts SQL para criar as tabelas \cardapio_semanal` e `usuarios`:`
 
 - Tabela cardapio_semanal
+
 CREATE TABLE cardapio_semanal (
 id INT AUTO_INCREMENT PRIMARY KEY,
 dia_semana VARCHAR(20) NOT NULL,
@@ -67,7 +68,11 @@ created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
 updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE
 CURRENT_TIMESTAMP
 );
--- Tabela usuarios
+
+
+
+- Tabela usuarios
+
 CREATE TABLE usuarios (
 id INT AUTO_INCREMENT PRIMARY KEY,
 username VARCHAR(50) NOT NULL UNIQUE,
@@ -77,13 +82,17 @@ created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 
+
 ALTER TABLE cardapio_semanal
 ADD COLUMN data_atualizacao DATETIME DEFAULT CURRENT_TIMESTAMP
 ON UPDATE CURRENT_TIMESTAMP;
 
+
+
 ALTER TABLE usuarios
 ADD COLUMN reset_token VARCHAR(255) NULL,
 ADD COLUMN reset_token_expires_at DATETIME NULL;
+
 
 * Adicione um usuário administrador na tabela \usuarios` (lembre-se de gerar o hash da senha!):`
 
