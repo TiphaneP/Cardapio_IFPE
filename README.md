@@ -11,7 +11,6 @@ Sistema de gerenciamento e visualização do cardápio semanal para a cantina do
 
 - Visualização do cardápio por dia e turno.
 
-- Filtragem e busca de itens do cardápio.
 
 **Página Pública:**
 
